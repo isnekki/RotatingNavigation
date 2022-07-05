@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: #484848;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.articleContainer {
+    position: absolute;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    background-color: white;
+    height: 120%;
+    width: 100%;
+    z-index: 2;
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+    transition: transform 1s ease;
+}
+
+.articleContainer.rotated {
+    transform: rotate(-20deg);
+    transform-origin: 0% 0%;
+    transition: transform 1s ease;
+}
+
+nav {
+    padding: 20px;
+    height: 200px;
+    width: 100px;
+    top: 70%;
+    transform: translateX(-150px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+nav.visible {
+    transform: translateX(0px);
+    transition: transform 1s ease;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.navCloser {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -80px;
+    top: -120px;
+    border-radius: 100px;
+    background-color: palevioletred;
+    height: 200px;
+    width: 200px;
+    transition: transform 1s ease;
+    transform: rotate(0deg);
+}
+
+.navCloser.open {
+    transform: rotate(-90deg);
+    transition: transform 1s ease;
+}
+
+button.rotateClock {
+    position: absolute;
+    left: 15px;
+    background-color: transparent;
+    padding-top: 20px;
+    border: none;
+}
+button.rotateCounter {
+    position: absolute;
+    top: 160px;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+}
+
+a {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    transition: margin-left 1s ease;
+}
+
+nav.visible a.about {
+    margin-left: 10px;
+    transition: margin-left 1s ease;
+}
+
+nav.visible a.contact {
+    margin-left: 20px;
+    transition: margin-left 1s ease;
+}
+
+svg.navsvg {
+    margin-right: 10px;
+}
+
+p.author {
+    margin: 0;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+}

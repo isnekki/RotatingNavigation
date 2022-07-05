@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Project 5: Rotating Navigation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navCloser">
+            <button class="rotateCounter" onclick="rotateArticleContainerCounterClockwise()">
+                <svg fill="#FFF" viewBox="0 0 100 80" width="20" height="20">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
+            </button>
+            <button class="rotateClock" onclick="rotateArticleContainerClockwise()">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="25" height="25"
+                    viewBox="0 0 30 30"
+                    style=" fill:#FFF;">    
+                        <path 
+                            d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z">
+                        </path>
+                </svg>
+            </button>
+        </div>
+        <div class="articleContainer">
+            <article>
+                <h1>Amazing Article</h1>
+                <p class="author">by Kane Taylor</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, neque fugiat! Commodi totam debitis consequuntur amet iste harum, iusto eius eum aut id autem porro repellendus minus accusamus consectetur quam laborum voluptatibus quis laboriosam ratione inventore possimus et repudiandae modi! Voluptatibus numquam magni odio, velit assumenda praesentium sint accusamus a non eius nisi architecto aspernatur sit fuga, nemo minus mollitia cumque consequatur exercitationem ab? Architecto debitis aliquam nostrum, est sunt eligendi expedita consectetur, corrupti non, esse obcaecati voluptates optio dicta fugiat odit. Enim ea earum eos delectus, ratione ad nisi et modi. Delectus rem porro pariatur incidunt officia inventore vitae!</p>
+                <h2>My Dog</h2>
+                <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="cute dog!" width="925px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iste fugit architecto accusantium quibusdam distinctio repudiandae nemo blanditiis consequatur amet nam necessitatibus, temporibus, minus nisi expedita voluptatibus, nulla ex corporis mollitia porro atque quod. Odio alias accusamus, reiciendis voluptatibus maiores facilis tempora ducimus nisi. Ipsa laborum rem sapiente optio et, sit voluptatum facere quisquam natus debitis nobis minima molestias non aliquid ullam quia veritatis sequi repudiandae nulla voluptas aperiam quos omnis maiores. Illo animi totam saepe consequatur id atque, accusantium deleniti molestias amet. Iusto quis nulla, illum impedit sunt nostrum, obcaecati eveniet quos facilis enim tempora dignissimos excepturi ea! Laboriosam.</p>
+            </article>
+        </div> 
+        <div class="navContainer">
+            <nav>
+                <a class="home" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <svg class="navsvg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="20" height="20"
+                        viewBox="0 0 50 50"
+                        style=" fill:#FFF;">    
+                            <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z">
+
+                            </path>
+                    </svg>
+                    HOME
+                </a>
+                <a class="about" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <svg class="navsvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    ABOUT
+                </a>
+                <a class="contact" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <svg class="navsvg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    CONTACT
+                </a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
